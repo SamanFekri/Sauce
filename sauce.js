@@ -31,7 +31,7 @@ function Sauce(sauces) {
             parent.innerHTML = html;
             var script = $("<script />", {
               html:
-              'let  = new Vue({' +
+              'let ' + temp.id + '_' + i + ' = new Vue({' +
               'el: \'#' + temp.id + '-' + i + '\',' +
               temp.data +
               '})'
