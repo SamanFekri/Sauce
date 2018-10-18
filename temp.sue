@@ -1,0 +1,18 @@
+<root>
+    <id>app</id>
+    <template>
+        <p>{{ message }}</p>
+    </template>
+    <data>
+        data : {
+            message: 'Hello Sue!'
+        }
+    </data>
+    <style>
+        p {
+          color: red;
+          font-size: 40px;
+          font-weight: bold;
+        }
+    </style>
+</root>
