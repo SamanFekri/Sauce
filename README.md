@@ -13,7 +13,7 @@ Sauce just change its template to Vue.
   ```HTML
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../lib/sauce.js"></script>
+  <script type="text/javascript" src="http://yourjavascript.com/202154111281/sauce.js"></script>
   <script>
     let sauces = [
       {name: 'ketchap', src: 'ketchap.sue'},
