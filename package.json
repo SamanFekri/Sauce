@@ -1,0 +1,26 @@
+{
+  "name": "sauce",
+  "version": "0.1.0",
+  "description": "compiling a template to vue on the fly",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamanFekri/Sauce.git"
+  },
+  "keywords": [
+    "Vue",
+    "Sauce"
+  ],
+  "author": "SKings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamanFekri/Sauce/issues"
+  },
+  "homepage": "https://github.com/SamanFekri/Sauce#readme"
+}
