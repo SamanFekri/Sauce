@@ -2,7 +2,7 @@
   "name": "sauce",
   "version": "0.1.0",
   "description": "compiling a template to vue on the fly",
-  "main": "index.js",
+  "main": "lib/sauce.js",
   "directories": {
     "lib": "lib"
   },
