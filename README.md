@@ -50,5 +50,8 @@ Sauce just change its template to Vue.
       </style>
   </root>
   ```
+  - `<template>` is the html you want render in your code.
+  - just add data part of vue js in `<data>` and add other parts to `<other>`.
+  - `<style>` is css you want to apply on your template.
 
 * you can find some samples in sample folder :)
