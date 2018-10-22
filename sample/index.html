@@ -14,8 +14,11 @@
     </data:desc>
 </ketchap>
 
+<bold></bold>
+
 <button onclick="clicked()">Render</button>
 <button onclick="add()">ADD</button>
+<button onclick="addSauce()">ADD Sauce</button>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -23,8 +26,7 @@
 <script type="text/javascript" src="../lib/sauce.js"></script><!--https://raw.githack.com/SamanFekri/Sauce/dev/lib/sauce.js-->
 <script>
   let sauces = [
-    {name: 'ketchap', src: 'ketchap.sue'},
-    {name: 'bold', src: 'bold.sue'}];
+    {name: 'ketchap', src: 'ketchap.sue'}];
   let s = new Sauce(sauces);
 
   function clicked() {
@@ -35,6 +37,11 @@
     let x = $("<bold />");
     $('body').append(x);
     s.render(x[0]);
+  }
+
+  function addSauce() {
+    let x = {name: 'bold', src: 'bold.sue'};
+    s.addSauce(x)
   }
 
 </script>
