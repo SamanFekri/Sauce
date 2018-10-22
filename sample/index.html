@@ -6,19 +6,43 @@
 
 </head>
 <body>
-<ketchap id="salam" name="SKings">
-    <bold></bold>
+<ketchap id="salam" data:name="SKings">
+    <data:first-name>Saman</data:first-name>
+    <data:last-name-name>Fekri</data:last-name-name>
+    <data:desc>
+        This is the description "Yoooooo"'hoooooooo'`
+    </data:desc>
 </ketchap>
 
+<bold></bold>
+
+<button onclick="clicked()">Render</button>
+<button onclick="add()">ADD</button>
+<button onclick="addSauce()">ADD Sauce</button>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://raw.githack.com/SamanFekri/Sauce/master/lib/sauce.js"></script>
+<script type="text/javascript" src="../lib/sauce.js"></script><!--https://raw.githack.com/SamanFekri/Sauce/dev/lib/sauce.js-->
 <script>
   let sauces = [
-    {name: 'ketchap', src: 'ketchap.sue'},
-    {name: 'bold', src: 'bold.sue'}];
-  new Sauce(sauces);
+    {name: 'ketchap', src: 'ketchap.sue'}];
+  let s = new Sauce(sauces);
+
+  function clicked() {
+    s.renderAll();
+  }
+
+  function add() {
+    let x = $("<bold />");
+    $('body').append(x);
+    s.render(x[0]);
+  }
+
+  function addSauce() {
+    let x = {name: 'bold', src: 'bold.sue'};
+    s.addSauce(x)
+  }
+
 </script>
 </html>

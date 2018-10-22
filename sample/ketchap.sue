@@ -3,7 +3,10 @@
     <template>
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
-        <p>{{ name }}</p>
+        <p>{{ first_name }} : {{ last_name_name }}</p>
+
+        {{desc}}
+        {{name}}
     </template>
     <data>
         data : {
