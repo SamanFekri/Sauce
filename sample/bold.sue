@@ -2,7 +2,6 @@
     <id>bold</id>
     <template>
         <p>BOLD STATIC</p>
-        <ketchap></ketchap>
     </template>
     <data></data>
     <other>
