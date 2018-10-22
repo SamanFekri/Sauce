@@ -6,14 +6,16 @@
 
 </head>
 <body>
-<ketchap id="salam" name="SKings">
+<ketchap id="salam" name="SKings" status='ok'>
     <data:first-name>Saman</data:first-name>
     <data:last-name-name>Fekri</data:last-name-name>
     <data:desc>
         This is the description "Yoooooo"'hoooooooo'`
     </data:desc>
-    <bold></bold>
+    <!--<bold></bold>-->
 </ketchap>
+
+<button onclick="clicked">Render</button>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -23,6 +25,10 @@
   let sauces = [
     {name: 'ketchap', src: 'ketchap.sue'},
     {name: 'bold', src: 'bold.sue'}];
-  new Sauce(sauces);
+  let s = new Sauce(sauces);
+
+  function clicked() {
+    s.render();
+  }
 </script>
 </html>
