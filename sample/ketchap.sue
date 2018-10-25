@@ -1,5 +1,5 @@
 <root xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://java.sun.com/JSP/Page" version="0.0.1">
-    <id>ket</id>
+    <id>app</id>
     <template>
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
