@@ -51,8 +51,13 @@ Sauce just change its template to Vue.
       </style>
   </root>
   ```
-* you can find some samples in sample folder :)
+ 
+  - `<template>` is the html you want render in your code.
+  - just add data part of vue js in `<data>` and add other parts to `<other>`.
+  - `<style>` is css you want to apply on your template.
   
+* you can find some samples in sample folder :)
+
 ### How pass data
 
 * You can pass data from attribute in html to vue like below:
