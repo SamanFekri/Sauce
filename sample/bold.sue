@@ -1,16 +1,14 @@
-<root xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://java.sun.com/JSP/Page" version="0.0.1">
-    <id>bold</id>
-    <template>
-        <p>BOLD STATIC</p>
-    </template>
-    <data></data>
-    <other>
-    </other>
-    <style>
-        p {
+<id>bold</id>
+<template>
+    <p>BOLD STATIC</p>
+</template>
+<data></data>
+<other>
+</other>
+<style>
+    p {
         color: blue;
         font-size: 40px;
         font-weight: bold;
-        }
-    </style>
-</root>
+    }
+</style>

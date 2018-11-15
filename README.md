@@ -24,32 +24,36 @@ Sauce just change its template to Vue.
   ```
 * A sample template
   ```xml
-  <root xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://java.sun.com/JSP/Page" version="0.0.1">
-      <id>ket</id>
-      <template>
-          <p>{{ message }}</p>
-          <button v-on:click="reverseMessage">Reverse Message</button>
-          <p>{{ name }}</p>
-      </template>
-      <data>
-          data : {
-              message: 'Hello Sue!'
+  <id>app</id>
+  <template>
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+      <p>{{ first_name }} : {{ last_name_name }}</p>
+  
+      {{desc}}
+      {{name}}
+  </template>
+  
+  <data>
+      data : {
+      message: 'Hello Sue!'
+      }
+  </data>
+  
+  <other>
+      methods: {
+          reverseMessage: function () {
+              this.message = this.message.split('').reverse().join('')
           }
-      </data>
-      <other>
-          methods: {
-              reverseMessage: function () {
-                  this.message = this.message.split('').reverse().join('')
-              }
-          }
-      </other>
-      <style>
-          p {
-            color: red;
-            font-size: 40px;
-          }
-      </style>
-  </root>
+      }
+  </other>
+  
+  <style>
+      p {
+          color: red;
+          font-size: 40px;
+      }
+  </style>
   ```
  
   - `<template>` is the html you want render in your code.
